@@ -18,26 +18,35 @@
 
                     $data_atual = new DateTime($data_atual);
 
-                    $data_atual = $data_atual->format('d/m');
-
-                    $countSigno = 1;
-
-                    echo "<h2>Data atual: {$data_atual}</h2>";
-                    echo "<br>";
+                    $findSigno = false;
 
                     foreach ($signos->signo as $signo) {
 
-                        $data_inicio = $signo->dataInicio;
-                        $data_fim = $signo->dataFim;
-
+                        $data_inicio = DateTime::createFromFormat('d/m', $signo->dataInicio);
+                        $data_fim = DateTime::createFromFormat('d/m', $signo->dataFim);
+                        $data_inicio-> setDate(
+                            $data_atual->format('y'),
+                            $data_inicio->format('m'),
+                            $data_inicio->format('d')
+                        );
                         
+                        $data_fim-> setDate(
+                            $data_atual->format('y'),
+                            $data_fim->format('m'),
+                            $data_fim->format('d')
+                        );
 
-                        echo "<p>Data inicio: $data_inicio </p>";
-                        echo "<p>Data Fim: $data_fim </p>";
+                        if ($data_inicio > $data_fim) {
+                            $data_fim->modify('+1 year');
+                            if ($data_atual > $data_inicio && $data_atual > $data_fim) {
+                                continue;
+                            }
+                        }
 
-                        if ($data_atual > $data_inicio && $data_atual > $data_fim) {
+                        if ($data_atual >= $data_inicio && $data_atual <= $data_fim) {
                             echo "<h2>{$signo->signoNome}</h2>";
                             echo "<br>";
+                            $findSigno = true;
                             break;
                         }
                     }
@@ -51,53 +60,5 @@
         </div>
     </div>
 </div>
-
-
-<?php
-/*
-$data_atual = $_POST['data_nascimento'];
-
-$signos = simplexml_load_file("signos.xml");
-
-$data_atual = new DateTime($data_atual);
-
-$data_atual = $data_atual->format('d-m');
-
-$countSigno = 1;
-
-echo "<h2>Data atual: {$data_atual}</h2>";
-echo "<br>";
-
-foreach ($signos->signo as $signo) {
-
-    $data_inicio = $signo->dataInicio;
-    $data_fim = $signo->dataFim;
-
-    if ($data_atual == $data_inicio) {
-        echo "<h2>{$signo->signoNome}</h2>";
-        echo "<br>";
-        break;
-    } else {
-        echo "<h2>Não encontrado. Signo id $countSigno.<h2>";
-        echo "<p>{$signo->signoNome}</p>";
-        echo "<p>Data inicio: $data_inicio </p>";
-        echo "<p>Data Fim: $data_fim </p>";
-        echo "<br>";
-        $countSigno++;
-    }
-}*/
-
-
-/*
-if ($signos) {
-        echo "<h2>{$signo->signoNome}</h2>";
-        echo "<p>{$signo->descricao}</p>";
-    }
-} else {
-    echo "<h2>Erro ao ler arquivo xml.<h2>";
-}
-
-*/
-?>
 
 <? include('layouts\footer.php') ?>

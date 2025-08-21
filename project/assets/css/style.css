@@ -1,0 +1,22 @@
+body {
+    background: rgba(105, 89, 205, 0.7);
+
+    background-image: url("/project/assets/css/style.css");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
+.bg-body-secondary {
+    --bs-bg-opacity: 0;
+    background-color: rgba(var(--bs-secondary-bg-rgb), var(--bs-bg-opacity)) !important;
+}
+
+.modal-content {
+    background-color: #ffffff73;
+}
+
+.form_control {
+    background-color: #ffffff73;
+}

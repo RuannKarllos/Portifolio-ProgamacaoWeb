@@ -4,83 +4,83 @@
         <dataInicio>21/03</dataInicio>
         <dataFim>20/04</dataFim>
         <signoNome>Áries</signoNome>
-        <descricao>Frase de efeito</descricao>
+        <descricao>"Sou fogo que inicia, coragem que move e energia que transforma."</descricao>
     </signo>
 
     <signo signoID="s2">
         <dataInicio>21/04</dataInicio>
         <dataFim>20/05</dataFim>
         <signoNome>Touro</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Enraizado na força, floresço no prazer e na estabilidade."</descricao>
     </signo>
 
     <signo signoID="s3">
         <dataInicio>21/05</dataInicio>
         <dataFim>20/06</dataFim>
         <signoNome>Gêmeos</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Minha mente é vento: leve, curiosa e sempre em movimento."</descricao>
     </signo>
 
     <signo signoID="s4">
         <dataInicio>21/06</dataInicio>
         <dataFim>22/07</dataFim>
         <signoNome>Câncer</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Sou mar de emoções, que acolhe, protege e transborda amor."</descricao>
     </signo>
 
     <signo signoID="s5">
         <dataInicio>23/07</dataInicio>
         <dataFim>22/08</dataFim>
         <signoNome>Leão</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Brilho porque nasci para iluminar, liderar e inspirar."</descricao>
     </signo>
 
     <signo signoID="s6">
         <dataInicio>23/08</dataInicio>
         <dataFim>22/09</dataFim>
         <signoNome>Virgem</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Na ordem encontro poder, no detalhe revelo perfeição."</descricao>
     </signo>
 
     <signo signoID="s7">
         <dataInicio>23/09</dataInicio>
         <dataFim>22/10</dataFim>
         <signoNome>Libra</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Sou equilíbrio em movimento, beleza em cada escolha."</descricao>
     </signo>
 
     <signo signoID="s8">
         <dataInicio>22/10</dataInicio>
         <dataFim>21/11</dataFim>
         <signoNome>Escorpião</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Minha intensidade é força, minha transformação é renascimento."</descricao>
     </signo>
 
     <signo signoID="s9">
         <dataInicio>22/11</dataInicio>
         <dataFim>21/12</dataFim>
         <signoNome>Sagitário</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Sou seta que busca horizontes, liberdade e sabedoria."</descricao>
     </signo>
 
     <signo signoID="s10">
         <dataInicio>22/12</dataInicio>
         <dataFim>19/01</dataFim>
         <signoNome>Caprcórnio</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Minha ambição constrói, minha disciplina conquista."</descricao>
     </signo>
 
     <signo signoID="s11">
         <dataInicio>20/01</dataInicio>
         <dataFim>18/02</dataFim>
         <signoNome>Aquário</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Sou vento de mudança, futuro em forma de ideias."</descricao>
     </signo>
 
     <signo signoID="s12">
         <dataInicio>19/02</dataInicio>
         <dataFim>20/03</dataFim>
         <signoNome>Peixes</signoNome>
-        <descricao>frase de efeito</descricao>
+        <descricao>"Nado em sonhos profundos, guiado pela intuição do coração."</descricao>
     </signo>
 </signos>

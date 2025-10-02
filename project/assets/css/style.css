@@ -14,9 +14,14 @@ body {
 }
 
 .modal-content {
-    background-color: #ffffff73;
+    background-color: #ffffffd8;
 }
 
 .form_control {
-    background-color: #ffffff73;
+    background-color: #ffffffd8;
+}
+
+h2 {
+    text-align: center;
+   font-family: 'Trebuchet MS';
 }

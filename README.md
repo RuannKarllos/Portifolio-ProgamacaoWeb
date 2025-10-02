@@ -1,8 +1,6 @@
 # Portifolio-ProgamacaoWeb
 Portifolio do projeto de Programação Web
 
-Desenvolver um uma página web para descobrir o seu signo de acordo com a sua data de 
-nascimento. A página inicial irá conter um formulário para que o usuário insira sua data de 
-nascimento e clique em um botão que irá redireciona-lo para uma outra página contendo as 
-principais informações do seu signo zodiacal. Para a estilização do conteúdo será necessário utilizar 
-Bootstrap e folhas de estilo próprias. 
+  A presente atividade tem como objetivo o desenvolvimento de uma aplicação web capaz de identificar o signo zodiacal de um usuário a partir de sua data de nascimento. Para tanto, a página inicial disponibilizará um formulário no qual o usuário poderá inserir sua data, sendo posteriormente direcionado a uma nova página que exibirá as principais informações relacionadas ao signo correspondente. A estrutura e a apresentação da aplicação serão elaboradas por meio da utilização do framework Bootstrap, complementado por folhas de estilo próprias, garantindo tanto a responsividade quanto a personalização visual da interface.
+	No que se refere à implementação, o projeto faz uso do PHP para o processamento dos dados recebidos do formulário, bem como da leitura de um arquivo XML, utilizado como estrutura para o armazenamento das informações referentes aos signos zodiacais. Essa abordagem evidencia a importância do XML como um formato flexível e organizado de representação de dados, além de possibilitar sua integração com diferentes linguagens e tecnologias.
+	Assim, a atividade proporciona não apenas o exercício da lógica de programação aplicada ao tratamento de datas e comparação de informações, mas também a prática da integração entre múltiplas tecnologias, consolidando conceitos fundamentais do desenvolvimento web.

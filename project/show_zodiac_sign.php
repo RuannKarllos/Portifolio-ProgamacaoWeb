@@ -1,4 +1,4 @@
-<?php include('layouts\header.php'); ?>
+<?php include('layouts/header.php'); ?>
 
 <div class="modal modal-sheet position-static d-block bg-body-secondary p-4 py-md-5" tabindex="-1" role="dialog"
     id="modalSignin">
@@ -25,21 +25,22 @@
                         $data_inicio = DateTime::createFromFormat('d/m', $signo->dataInicio);
                         $data_fim = DateTime::createFromFormat('d/m', $signo->dataFim);
                         $data_inicio-> setDate(
-                            $data_atual->format('y'),
+                            $data_atual->format('Y'),
                             $data_inicio->format('m'),
                             $data_inicio->format('d')
                         );
                         
                         $data_fim-> setDate(
-                            $data_atual->format('y'),
+                            $data_atual->format('Y'),
                             $data_fim->format('m'),
                             $data_fim->format('d')
                         );
 
                         if ($data_inicio > $data_fim) {
-                            $data_fim->modify('+1 year');
-                            if ($data_atual > $data_inicio && $data_atual > $data_fim) {
-                                continue;
+                            if ($data_atual < $data_inicio) {
+                                $data_fim->modify(modifier: '+1 year');
+                            } else {
+                                $data_fim->modify(modifier: '+1 year');
                             }
                         }
 
@@ -61,4 +62,4 @@
     </div>
 </div>
 
-<? include('layouts\footer.php') ?>
+<? include('layouts/footer.php'); ?>

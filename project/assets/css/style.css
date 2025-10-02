@@ -1,7 +1,7 @@
 body {
     background: rgba(105, 89, 205, 0.7);
 
-    background-image: url("/project/assets/css/style.css");
+    background-image: url("../imgs/roda_signos.jpg");
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
